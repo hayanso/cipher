@@ -4,7 +4,7 @@ eng_alphabet_big = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 cipher_text = ""
 
 ####### Definition #######
-def caesar_encript(plain_text, shift_num):
+def caesar_encrypt(plain_text, shift_num):
     global cipher_text
     for index_num in range(0, len(plain_text)):
         index_str = plain_text[index_num]
