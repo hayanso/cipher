@@ -35,6 +35,5 @@ def vignere_encript(plain_text, key):
             list_index += 1
         elif index_str.isalpha() == False:
             cipher_text += index_str
+
     return cipher_text
-    
-print(vignere_encript("divert troops to east ridge", "sky"))

@@ -35,6 +35,5 @@ def vignere_decrypt(cipher_text, key):
             list_index += 1
         elif index_str.isalpha() == False:
             plain_text += index_str
+            
     return plain_text
-
-print(vignere_decrypt("vstwbr lbmgzq ly cscr jsbyo", "sky"))

@@ -18,4 +18,5 @@ def caesar_encrypt(plain_text, shift_num):
             cipher_text += eng_alphabet_big[replace_position_num]
         elif index_str.isalpha() == False:
             cipher_text += index_str
+            
     return cipher_text
