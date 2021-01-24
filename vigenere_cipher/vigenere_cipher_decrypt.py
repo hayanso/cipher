@@ -8,7 +8,7 @@ def vignere_decrypt(cipher_text, key):
     global index_key_l1
     global plain_text
     global list_index
-    for index_key_num in range(0, len(key)):
+    for index_key_num in range(len(key)):
         index_key = key[index_key_num]
         if index_key.isupper() == True:
             index_key_num = eng_alphabet_big.index(index_key)
@@ -19,7 +19,7 @@ def vignere_decrypt(cipher_text, key):
         elif index_key.isalpha() == False:
             index_key_l1.append(index_key)
 
-    for index_num in range(0, len(cipher_text)):
+    for index_num in range(len(cipher_text)):
         index_str = cipher_text[index_num]
         if list_index == len(key):
             list_index = 0

@@ -6,7 +6,7 @@ cipher_text = ""
 ####### Definition #######
 def caesar_encrypt(plain_text, shift_num):
     global cipher_text
-    for index_num in range(0, len(plain_text)):
+    for index_num in range(len(plain_text)):
         index_str = plain_text[index_num]
         if index_str.islower() == True:
             position_num = eng_alphabet_small.index(index_str)

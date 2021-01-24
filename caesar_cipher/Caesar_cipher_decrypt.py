@@ -8,7 +8,7 @@ out_come_dic = {}
 def caesar_decrypt(cipher_text):
     global plain_text
     for shift_num in range(26):
-        for index_num in range(0, len(cipher_text)):
+        for index_num in range(len(cipher_text)):
             index_str = cipher_text[index_num]
             if index_str.islower() == True:
                 position_num = eng_alphabet_small.index(index_str)

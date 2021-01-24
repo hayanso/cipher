@@ -6,7 +6,7 @@ plain_text = ""
 ####### Definition #######
 def caesar_decrypt(cipher_text, key):
     global plain_text
-    for index_num in range(0, len(cipher_text)):
+    for index_num in range(len(cipher_text)):
         index_str = cipher_text[index_num]
         if index_str.islower() == True:
             position_num = eng_alphabet_small.index(index_str)
